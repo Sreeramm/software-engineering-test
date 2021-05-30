@@ -1,5 +1,5 @@
 import datetime as dt
-from prettytable import PrettyTable
+from prettytable import PrettyTable # Added PrettyTable for printing purpose
 
 from seed import res
 

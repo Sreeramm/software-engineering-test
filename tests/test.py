@@ -30,3 +30,5 @@ class LongestTimeRangeAnalyticsTest(unittest.TestCase):
         self.assertEqual(str(longest_timerange.results[0]), "Start=2021-03-16   End=2021-03-18   Length=3")
         self.assertEqual(str(longest_timerange.results[1]), "Start=2021-03-13   End=2021-03-13   Length=1")
 
+
+unittest.main()
