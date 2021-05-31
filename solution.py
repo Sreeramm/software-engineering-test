@@ -48,7 +48,8 @@ class LongestTimeRangeAnalytics:
                     start_time = self.login_timestamps[index]  # reset the start time to find next date range
                     count = 1  # reset count to 1, restart the consecutive date range
                 end_time = self.login_timestamps[index]
-            self.results.append(TimeRange(start_time, end_time, count))
+            if count > 1:
+                self.results.append(TimeRange(start_time, end_time, count))
 
     # display the calculated result based on longest period
     def display_results(self):
